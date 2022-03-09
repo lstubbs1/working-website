@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{>head}}
+</head>
+
+<body>
+<nav class = 'navbar navbar-light bg-light">'
+    <div class="container d-flex mb-3">
+        <a class="navbar-brand p-2" href="#" onclick="window.location.href = window.location.origin;">
+            <img src="/images/Soccer_ball.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+            Soccer
+        </a>
+        <a class="p-2 ms-auto btn btn-secondary btn-sm" href="/home">Home</a>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+        
+                <h3>I was part of the Bridgewater Men's Soccer team these past 4 years!</h3>
+                <p>Soccer is a sport played with your feet. You try to score in an opposing team's goal!</p>
+                <p>Access token: {{token}}</p>
+           </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    
+</body>
+</html>

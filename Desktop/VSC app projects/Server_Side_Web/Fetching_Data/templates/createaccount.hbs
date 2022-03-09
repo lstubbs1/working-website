@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{>head}}
+    <script defer src="/js/createaccount.js"></script>
+</head>
+
+<body>
+<nav class = 'navbar navbar-light bg-light">'
+    <div class="container d-flex mb-3">
+        <a class="navbar-brand p-2" href="#" onclick="window.location.href = window.location.origin;">
+            <img src="/images/Soccer_ball.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+            Soccer
+        </a>
+        <a class="p-2 ms-auto btn btn-secondary btn-sm" href="/login">Log in</a>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+        
+                <h3>Please create your account</h3>
+            
+                <form id="createAccountForm" action="/login"> 
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password"><br><br>
+                    <button type="submit">Submit</button> 
+                </form>
+           </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+</body>
+</html>
